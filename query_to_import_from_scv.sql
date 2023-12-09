@@ -1,0 +1,5 @@
+LOAD DATA INFILE '/path/to/your/csv/file.csv' INTO TABLE emails FIELDS TERMINATED BY ','  OPTIONALLY ENCLOSED BY '"' TERMINATED BY ',' LINES TERMINATED BY '\n' IGNORE 1 ROWS;
+
+/* If got "permisson issue", then you the below query */
+
+LOAD DATA LOCAL INFILE '/path/to/your/csv/file.csv' INTO TABLE emails FIELDS TERMINATED BY ','  OPTIONALLY ENCLOSED BY '"' TERMINATED BY ',' LINES TERMINATED BY '\n' IGNORE 1 ROWS;
